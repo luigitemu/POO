@@ -1,0 +1,49 @@
+.btn-primary{
+			margin-top: 40px;
+		}
+
+		.progress-bar{
+			background-color: #30c927;
+		}
+		.btn-lg{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: large;
+		}
+
+		.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active{
+			font-size: 15px;
+		}
+
+		.paso{
+			font-size: 15px;
+		}
+
+		.nt{
+			font-size: 13px;
+			
+		}
+
+		.form-control{
+			font-size: 13px;
+
+		}
+		body{
+			font-size: 1.5rem;
+
+		 }
+		 .confirmacion{
+		 	background: #08e642;
+		 	border: 1px
+		 	solid green;
+		 	border-radius: 3px;
+		 	padding: 1px;
+		 }
+		.negacion{
+				background: #f71c1c;
+				border: 1px solid red;
+				border-radius: 3px;
+				padding: 1px;
+		}

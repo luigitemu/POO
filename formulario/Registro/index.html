@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<title></title>
+
+<!--CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet" >
+	<!--<link href="main.css" rel="stylesheet" type="text/css" >-->	
+<!--estilos-->
+	<style type="text/css">
+		.rotulo{
+			color: white;
+			text-align: center;
+		}
+		.oscuro{
+			color: white;
+		}
+		.btn-primary{
+			margin-top: 40px;
+		}
+
+		.progress-bar{
+			background-color: #30c927;
+		}
+		.btn-lg{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: large;
+		}
+
+		.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active{
+			font-size: 15px;
+		}
+
+		.paso{
+			font-size: 15px;
+		}
+
+		.nt{
+			font-size: 13px;
+			
+		}
+
+		.form-control{
+			font-size: 13px;
+
+		}
+		body{
+			font-size: 1.5rem;
+			background-image: url(img/fondo3.jpg);
+			background-size: cover;
+			
+
+		 }
+		 h1{
+		 	font-size: 3rem;
+		 }
+		 .confirmacion{
+		 	background: #08e642;
+		 	border: 1px
+		 	solid green;
+		 	border-radius: 3px;
+		 	padding: 0px;
+		 }
+		.negacion{
+				background: #f71c1c ;
+				 
+				border: 1px solid red;
+				border-radius: 3px;
+				padding: 0px;
+		}
+
+	</style>
+
+</head>
+
+
+<body background="img/fondo2.jpg"> 
+
+<div class="container">
+	<div class="rotulo">
+	<h1 class="oscuro"> Mi Formulario de Registro</h1>
+		<p class="oscuro"> Practica #1 de POO  </p>
+				<div class="bd-expample ">
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				 Registrarse
+				</button>
+		</div>
+		<hr>
+
+		</div>
+<div class="row">
+	<div class="col-md-8">
+			<!-- Button trigger modal -->
+				
+		<!-- Modal -->
+
+		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLiveLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					
+					<div class= "modal-header">
+						<h1>Formulario de Registro</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          				<span aria-hidden="true">&times;</span>
+	        			</button>
+					</div>
+
+						<div class="modal-body"  id="asistente">
+					<!--contenido del modal-->
+						<!-- Progress bar, color verde -->
+						<div class="progress" style="height: 20px">
+							<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 20%; height: 20px">
+							Paso 1 de 4
+							</div>
+						</div>
+
+						<!-- Enlaces de navegación a todas las tab -->
+						<div class="navbar">
+								<!-- Enlaces de navegación a todas las tab -->
+							<!-- barra de navegación ajustada -->
+							<div class="navbar-inner">
+							
+							<!-- Lista desordenada, (nav-pillis convierte de enlaces texto a botones) -->
+							<ul class="nav nav-pills">
+							<li class="paso"><a class="nav-link active" href="#paso1" data-toggle="tab" data-paso="1"><span class="glyphicon glyphicon-user"></span> Personal</a></li> &nbsp; 
+							<li class="paso"><a class="nav-link " href="#paso2" data-toggle="tab" data-paso="2"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li> &nbsp; 
+							<li class="paso"><a class="nav-link " href="#paso3" data-toggle="tab" data-paso="3"><span class="glyphicon glyphicon-tasks"></span> Seguridad</a></li> &nbsp; 
+							<li class="paso"><a class="nav-link " href="#paso4" data-toggle="tab" data-paso="4"><span class="glyphicon glyphicon glyphicon-floppy-saved"></span> Fin</a></li>
+							</ul>
+							
+							</div>
+						
+						</div>
+
+						<!-- Contenido de todos los tabs -->
+
+						<div class="tab-content">
+							<!--Tab "paso1"-->
+							<div class="tab-pane fade in active" id="paso1">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well">
+							<label class="nt">Nombres</label>
+							<input class="form-control input-lg">
+							<br>
+							<label class="nt">Apellidos</label>
+							<input class="form-control input-lg">
+							<br>
+
+
+							<label class="nt">Fecha de Nacimiento</label>
+															
+
+								    <!-- Form code begins -->
+								    <form method="post">
+								      <div class="form-group"> <!-- Date input -->
+								        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+								      </div>
+								     </form>
+								     <!-- Form code ends --> 
+
+
+							    <!-- Form code ends --> 
+
+							</div>
+							<a class="btn btn-default next nt" href="#">Continuar</a>
+						</div>
+
+						<!-- Tab "paso2" -->
+						<div class="tab-pane fade" id="paso2">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well">
+							<label class="nt"><span class="glyphicon glyphicon-thumbs-up nt"></span> Facebook</label>
+							<input class="form-control input-lg" placeholder="cuenta facebook">
+							<br>
+							<label class="nt"><span class="glyphicon glyphicon-retweet nt"></span> Twitter</label>
+							<input class="form-control input-lg" placeholder="cuenta Twitter">
+							<br>
+							<label class="nt"><span class="glyphicon glyphicon-expand nt"></span> Youtube</label>
+							<input class="form-control input-lg" placeholder="cuenta youtube">
+							<br>
+							<label class="nt"><span class="glyphicon glyphicon-globe nt"></span> Página Web</label>
+							<input class="form-control input-lg" placeholder="www.paginaWEb.com">
+							</div>
+							<a class="btn btn-default next nt" href="#">Continuar</a>
+						</div>
+
+						<!-- Tab "paso3" -->
+						<div class="tab-pane fade" id="paso3">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well nt"> <h2>Ya Casi!</h2><p class="nt">Ingresa tu información de seguridad para finalizar.</p></div>
+							<label class="nt">Correo electrónico</label>
+							<input class="form-control input-lg" placeholder="inyectadordenubes@example.com">
+							<br>
+							<label class="nt">Contraseña</label>
+							<input class="form-control input-lg" type="password" placeholder="ingrese una contraseña" name="pass1" min="6" max="10">
+							<br>
+							<label class="nt">Repetir contraseña</label>
+							<input class="form-control input-lg" type="password" placeholder="vuelva a ingresar la contraseña" name="pass2" min="6" max="10">
+							<br>
+							<a class="btn btn-default next nt" href="#">Continuar</a>
+						</div>
+
+						<!-- Tab "paso4" -->
+						<div class="tab-pane fade" id="paso4">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well nt"> <h2>Has finalizado!</h2> <p class="nt">Felicidades!, Para continuar con el registro haz clic en enviar.</p></div>
+							<a class="btn btn-success first nt" href="#">Volver a Empezar.</a>
+							</div>
+							</div>
+						</div>
+						
+						<div class="modal-footer">
+							<button class="btn nt" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+							<button class="btn nt">Enviar</button>
+						</div>
+
+						<!-- Fin del contenido del modal -->
+						</div>
+					<!--fin del contenido-->
+					
+					
+				</div>		
+			</div>
+		</div>
+		
+		<!--fin de Modal-->
+	</div>	
+	</div>	
+</div> 
+
+
+<!--JQUERY & BOOTSTRAP.JS-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+
+
+$(document).ready(function() {
+	//variables
+	var pass1 = $('[name=pass1]');
+	var pass2 = $('[name=pass2]');
+	var confirmacion = "Las contraseñas si coinciden";
+	var longitud = "La contraseña debe estar formada entre 6-10 carácteres ";
+	var negacion = "No coinciden las contraseñas";
+	var vacio = "La contraseña no puede estar vacía";
+	//oculto por defecto el elemento span
+	var span = $('<span></span>').insertAfter(pass2);
+	span.hide();
+	//función que comprueba las dos contraseñas
+	function coincidePassword(){
+	var valor1 = pass1.val();
+	var valor2 = pass2.val();
+	//muestro el span
+	span.show().removeClass();
+	//condiciones dentro de la función
+	if(valor1 != valor2){
+	span.text(negacion).addClass('negacion');	
+	}
+	if(valor1.length==0 || valor1==""){
+	span.text(vacio).addClass('negacion');	
+	}
+	if(valor1.length<6 || valor1.length>10){
+	span.text(longitud).addClass('negacion');
+	}
+	if(valor1.length!=0 && valor1==valor2){
+	span.text(confirmacion).removeClass("negacion").addClass('confirmacion');
+	}
+	}
+	//ejecuto la función al soltar la tecla
+	pass2.keyup(function(){
+	coincidePassword();
+	});
+});
+
+
+
+
+$(document).ready(function(){
+
+//Le asignamos la función a los elementos con clase "next"
+$('.next').click(function(){
+//Obtenemos el id siguiente de la lista de los tab
+var siguienteId = $(this).parents('.tab-pane').next().attr("id");
+//mostramos el tab con el id que oobtuvimos anteriormente
+$('[href=#'+siguienteId+']').tab('show');
+})
+
+//levantamos un listener cada vez que se activa un enlace del nav
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) 
+{
+	//Obtenemos el valor del paso del elemento nav
+	var paso = $(e.target).data('paso');
+	//Sacamos el porcentaje del progreso según el valor obtenido.
+	var porcentaje = (parseInt(paso) / 4) * 100;
+	//Asignamos el ancho de la barra
+	$('.progress-bar').css({width: porcentaje + '%'});
+	//Cambiamos la etiqueta de la barra
+	$('.progress-bar').text("Paso " + paso + " de 4");
+})
+
+//Botón de "Volver a empezar"
+$('.first').click(function(){
+//activamos la primera tab
+$('#asistente a:first').tab('show')
+})
+});
+
+
+</script>
+
+
+
+</body>
+</html>
+
