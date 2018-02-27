@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<title></title>
+
+<!--CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet" >
+	<link href="main.css" rel="stylesheet" type="text/css" >	
+
+
+	<style type="text/css">
+		.btn-primary{
+			margin-top: 40px;
+		}
+
+		.progress-bar{
+			background-color: #30c927;
+		}
+		.btn-lg{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: large;
+		}
+
+		.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active{
+			font-size: 15px;
+		}
+
+		.paso{
+			font-size: 15px;
+		}
+
+	</style>
+
+</head>
+
+
+<body> <meta charset="utf-8">
+
+<div class="container">
+<div class="row">
+	<div class="col-md-8">
+			<!-- Button trigger modal -->
+		<div class="bd-expample">
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				 Registrarse
+				</button>
+		</div>		
+		<!-- Modal -->
+
+		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLiveLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					
+					<div class= "modal-header">
+						<h1>Formulario de Registro</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          				<span aria-hidden="true">&times;</span>
+	        			</button>
+					</div>
+
+						<div class="modal-body"  id="asistente">
+					<!--contenido del modal-->
+						<!-- Progress bar, color verde -->
+						<div class="progress" style="height: 20px">
+							<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 20%; height: 20px">
+							Paso 1 de 4
+							</div>
+						</div>
+
+						<!-- Enlaces de navegación a todas las tab -->
+						<div class="navbar">
+								<!-- Enlaces de navegación a todas las tab -->
+							<!-- barra de navegación ajustada -->
+							<div class="navbar-inner">
+							
+							<!-- Lista desordenada, (nav-pillis convierte de enlaces texto a botones) -->
+							<ul class="nav nav-pills">
+							<li class="paso"><a class="nav-link active" href="#paso1" data-toggle="tab" data-paso="1"><span class="glyphicon glyphicon-user"></span> Personal</a></li> &nbsp; 
+							<li class="paso"><a class="nav-link " href="#paso2" data-toggle="tab" data-paso="2"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li> &nbsp; 
+							<li class="paso"><a class="nav-link " href="#paso3" data-toggle="tab" data-paso="3"><span class="glyphicon glyphicon-tasks"></span> Seguridad</a></li> &nbsp; 
+							<li class="paso"><a class="nav-link " href="#paso4" data-toggle="tab" data-paso="4"><span class="glyphicon glyphicon glyphicon-floppy-saved"></span> Fin</a></li>
+							</ul>
+							
+							</div>
+						
+						</div>
+
+						<!-- Contenido de todos los tabs -->
+
+						<div class="tab-content">
+							<!--Tab "paso1"-->
+							<div class="tab-pane fade in active" id="paso1">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well">
+							<label>Nombres</label>
+							<input class="form-control input-lg">
+							<br>
+							<label>Apellidos</label>
+							<input class="form-control input-lg">
+							<br>
+							<label>Fecha de Nacimiento</label>
+							<input class="form-control input-lg">
+							</div>
+							<a class="btn btn-default next" href="#">Continuar</a>
+						</div>
+
+						<!-- Tab "paso2" -->
+						<div class="tab-pane fade" id="paso2">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well">
+							<label><span class="glyphicon glyphicon-thumbs-up"></span> Facebook</label>
+							<input class="form-control input-lg">
+							<br>
+							<label><span class="glyphicon glyphicon-retweet"></span> Twitter</label>
+							<input class="form-control input-lg">
+							<br>
+							<label><span class="glyphicon glyphicon-expand"></span> Youtube</label>
+							<input class="form-control input-lg">
+							<br>
+							<label><span class="glyphicon glyphicon-globe"></span> Página Web</label>
+							<input class="form-control input-lg">
+							</div>
+							<a class="btn btn-default next" href="#">Continuar</a>
+						</div>
+
+						<!-- Tab "paso3" -->
+						<div class="tab-pane fade" id="paso3">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well"> <h2>Ya Casi!</h2>Ingresa tu información de seguridad para finalizar.</div>
+							<label>Correo electrónico</label>
+							<input class="form-control input-lg">
+							<br>
+							<label>Contraseña</label>
+							<input class="form-control input-lg">
+							<br>
+							<label>Repetir contraseña</label>
+							<input class="form-control input-lg">
+							<br>
+							<a class="btn btn-default next" href="#">Continuar</a>
+						</div>
+
+						<!-- Tab "paso4" -->
+						<div class="tab-pane fade" id="paso4">
+							<!-- Recuadro que engloba los controles de entrada -->
+							<div class="well"> <h2>Has finalizado!</h2> Felicidades!, Para continuar con el registro haz clic en enviar.</div>
+							<a class="btn btn-success first" href="nexttab">Volver a Empezar.</a>
+							</div>
+							</div>
+						</div>
+						
+						<div class="modal-footer">
+							<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+							<button class="btn ">Enviar</button>
+						</div>
+
+						<!-- Fin del contenido del modal -->
+						</div>
+					<!--fin del contenido-->
+					
+					
+				</div>		
+			</div>
+		</div>
+		
+		<!--fin de Modal-->
+	</div>	
+	</div>	
+</div> 
+
+<!--JQUERY & BOOTSTRAP.JS-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+//Le asignamos la función a los elementos con clase "next"
+$('.next').click(function(){
+//Obtenemos el id siguiente de la lista de los tab
+var siguienteId = $(this).parents('.tab-pane').next().attr("id");
+//mostramos el tab con el id que oobtuvimos anteriormente
+$('[href=#'+siguienteId+']').tab('show');
+})
+
+//levantamos un listener cada vez que se activa un enlace del nav
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) 
+{
+	//Obtenemos el valor del paso del elemento nav
+	var paso = $(e.target).data('paso');
+	//Sacamos el porcentaje del progreso según el valor obtenido.
+	var porcentaje = (parseInt(paso) / 4) * 100;
+	//Asignamos el ancho de la barra
+	$('.progress-bar').css({width: porcentaje + '%'});
+	//Cambiamos la etiqueta de la barra
+	$('.progress-bar').text("Paso " + paso + " de 4");
+})
+
+//Botón de "Volver a empezar"
+$('.first').click(function(){
+//activamos la primera tab
+$('#asistente a:first').tab('show')
+})
+});
+</script>
+
+</body>
+</html>
