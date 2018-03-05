@@ -13,6 +13,7 @@
 <body>
 		<div class="container-fluid">
 			<div class="row">
+				<div class="col-xl-6">
 				<table class="table table-striped table-hover">
 					<tr>
 						<td> Nombre Aplicacion:</td>
@@ -82,8 +83,14 @@
 
 
 				</table>
-				<input class="btn btn-primary" type="submit" name="btn-guardar" value="Guardar">
-				<input  class="btn btn-success" type="submit" name="btn-guardar" value="Guardar">
+					<input class="btn btn-primary" type="submit" name="btn-guardar" value="Guardar">
+					<input  class="btn btn-warning" type="submit" name="btn-guardar" value="Limpiar">
+				</div>
+				<div class="col-xl-6">
+					este esta del otro lado
+				</div>
+			
+
 
 			</div>		
 	</div>
