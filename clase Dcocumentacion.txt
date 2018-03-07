@@ -1,0 +1,9 @@
+Evento para validar cuand el usuario estaa escribiendo en el teclado es 
+evento.onKeyDown();
+
+para validar contraseñas
+-Se Accede a traves del id 
+- o a traves del apuntador this( se puede acceder a toda la etiqueta )
+	-para validar el tamaño de la contraseña
+		+ value.length
+		
