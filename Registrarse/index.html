@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/signin.css">
+  <link rel="icon" href="http://ssl.gstatic.com/images/branding/product/1x/google_plus_192dp.png" sizes="192x192">
+  <title>Registrarse :)</title>
+ 
+</head>
+<body>
+	 <div class="container">
+	 	<div class="row">
+	 		  <div class="wrapper">
+				    <form class="form-signin">  
+				    <img src="img/google3.png" ">     
+				      <h2 class="form-signin-heading">Registrarse</h2>
+				      <p>Nombre</p>
+				      <input type="text" name="txt-nombre" id="txt-nombre" class="form-control" placeholder="Nombre">
+				      <p>Apellido</p>
+				      <input type="text" class="form-control" name="txt-apellido" placeholder="Apellido"></input>
+				      <p>Escoge tu nombre de ususario</p>
+				      <input type="text" class="form-control" name="txt-usuario" placeholder="example@gmail.com"></input>
+				      <p>Crea una Contraseña</p>
+				      <input type="password" class="form-control" name="txt-contrasena"  ></input>
+				      <p>Telefono Celular</p>
+				      <input class="form-control" name="txt-celular" placeholder="99999999" </input>
+				      <p>Fecha de Nacimiento</p>
+				      <input type="date" class="form-control" name="txt-fecha-nacimiento"></input>
+				      <p>Genero</p>
+				      <select class="form-control">
+				      		<option value="0">Hombre</option>
+				      		<option value="1">Mujer</option>
+				      		<option value="2">Otros</option>
+				      		<option value="3">Narniano</option>
+				      </select>
+
+ 				      <button class="btn btn-lg btn-primary btn-block" type="button" onclick="validacion();">Registrarse</button> 
+				    </form>
+			  </div>
+	 	</div>
+	 </div>
+ 
+	 <script src="js/controlador.js"></script>
+</body>
+</html>
