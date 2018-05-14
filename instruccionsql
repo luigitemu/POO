@@ -1,0 +1,5 @@
+select a.codigo_usuario, a.codigo_usuario_sigue, b.nombre, b.lugar 
+FROM tbl_seguidores a
+INNER JOIN tbl_usuarios b 
+ON(a.codigo_usuario = b.codigo_usuario)
+WHERE a.codigo_usuario = 1
