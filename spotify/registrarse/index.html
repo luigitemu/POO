@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Registrate </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/floating-labels.css" rel="stylesheet">
+    <link rel="icon" href="//www.scdn.co/i/_global/favicon.png">
+</head>
+
+<body>
+    <form class="form-signin">
+        <div class="text-center mb-4">
+            <img class="mb-4" src="img/spotify.png">
+            <h1 class="h3 mb-3 font-weight-normal" style="color: #1ED760;">Registrate</h1>
+        </div>
+
+        <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputEmail">Email</label>
+            <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="email" id="verificar-correo" class="form-control" placeholder="Password" required>
+            <label for="verificar-correo">Verificar Email</label>
+            <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" onkeydown="validarContrasena(this);" placeholder="Password" required>
+            <label for="inputPassword">Contraseña</label>
+            <div class="valid-feedback">Correcto</div>
+            <div class="invalid-feedback">Debe tener más de 6 caracteres</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" id="nombre" class="form-control" required>
+            <label for="nombre">¿Como  te llamas ?</label>
+            <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+
+        <div class="form-label-group">
+            <input type="date" id="fecha-naciemiento" class="form-control" required>
+            <div class="invalid-feedback">Campo obligatorio</div>
+            <!--<label for="inputPassword">Fecha de Nacimiento</label>-->
+        </div>
+
+        <div class="checkbox mb-3">
+            <label>
+          <input type="checkbox" value="remember-me" > Recordarme 
+        </label>
+        </div>
+        <button class="btn btn-lg  btn-block" style="background-color:#1ED760;" type="submit" onclick="validar()">Registrarse</button>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+    </form>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+
+</html>
