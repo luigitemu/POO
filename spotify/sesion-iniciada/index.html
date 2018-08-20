@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>SPOTIFY</title>
+
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/default-spotify.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #141414;">
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Spotify</a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar" style="background-color: #141414;">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard 
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Explorar</h7>
+                </a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Radio</h7>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="nav flex-column">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span class="d-color">TU BIBLIOTECA</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+              </a>
+            </h6>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Escuchad. Recient.</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Canciones favoritas</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Álbumes</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Artistas</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Emisoras</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Archivos Locales</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Podcast</h7>
+                </a>
+              </li>
+              </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span class="d-color">PLAYLIST</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Current month</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Last quarter</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Social engagement</h7>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <h7 class="d-color">Year-end sale</h7>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 ">
+            <h1 class="h2 d-color">Canciones Favoritas</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+              </button>
+            </div>
+
+          </div>
+		    <div class="border-bottom pb-3">
+            	<button type="button" class="btn btn-success"">Reproducir</button>
+            </div>
+
+
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+          </div>
+
+          <div class="table-responsive">
+            <table class="table-sm table table-hover table-dark" style="background-color:#181818">
+              <thead>
+                <tr>
+                  <th class="d-color">#</th>
+                  <th class="d-color">TITULO</th>
+                  <th class="d-color">ARTISTA</th>
+                  <th class="d-color">ALBUM</th>
+                  <th class="d-color"><span data-feather="calendar"></span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">Lorem</td>
+                  <td class="d-color">ipsum</td>
+                  <td class="d-color">dolor</td>
+                  <td class="d-color">sit</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">amet</td>
+                  <td class="d-color">consectetur</td>
+                  <td class="d-color">adipiscing</td>
+                  <td class="d-color">elit</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">Integer</td>
+                  <td class="d-color">nec</td>
+                  <td class="d-color">odio</td>
+                  <td class="d-color">Praesent</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">libero</td>
+                  <td class="d-color">Sed</td>
+                  <td class="d-color">cursus</td>
+                  <td class="d-color">ante</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">dapibus</td>
+                  <td class="d-color">diam</td>
+                  <td class="d-color">Sed</td>
+                  <td class="d-color">nisi</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">Nulla</td>
+                  <td class="d-color">quis</td>
+                  <td class="d-color">sem</td>
+                  <td class="d-color">at</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">nibh</td>
+                  <td class="d-color">elementum</td>
+                  <td class="d-color">imperdiet</td>
+                  <td class="d-color">Duis</td>
+                </tr>
+                <tr>
+                 <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">sagittis</td>
+                  <td class="d-color">ipsum</td>
+                  <td class="d-color">Praesent</td>
+                  <td class="d-color">mauris</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">Fusce</td>
+                  <td class="d-color">nec</td>
+                  <td class="d-color">tellus</td>
+                  <td class="d-color">sed</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">augue</td>
+                  <td class="d-color">semper</td>
+                  <td class="d-color">porta</td>
+                  <td class="d-color">Mauris</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">massa</td>
+                  <td class="d-color">Vestibulum</td>
+                  <td class="d-color">lacinia</td>
+                  <td class="d-color">arcu</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">eget</td>
+                  <td class="d-color">nulla</td>
+                  <td class="d-color">Class</td>
+                  <td class="d-color">aptent</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">taciti</td>
+                  <td class="d-color">sociosqu</td>
+                  <td class="d-color">ad</td>
+                  <td class="d-color">litora</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">torquent</td>
+                  <td class="d-color">per</td>
+                  <td class="d-color">conubia</td>
+                  <td class="d-color">nostra</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">per</td>
+                  <td class="d-color">inceptos</td>
+                  <td class="d-color">himenaeos</td>
+                  <td class="d-color">Curabitur</td>
+                </tr>
+                <tr>
+                  <td class="d-color"><i class="far fa-heart"></i></td>
+                  <td class="d-color">sodales</td>
+                  <td class="d-color">ligula</td>
+                  <td class="d-color">in</td>
+                  <td class="d-color">libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+<!--  PIE DE PAGINA -->
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark" style="height: 70px">
+    	<div class="container d-color">
+
+<!-- IZQ -->    		
+    			<div class="col">
+				    <div class="row">
+				    	<div class="col">
+				    		CANCION
+				    	</div>
+				    	<div class="w-100"></div>
+				    	<div class="col">
+				    		ARTISTA
+				    	</div>
+				    </div>				    
+				</div>
+
+<!-- CENTRO --> 
+				<div class="col">
+				    <div class="row">
+				    	<div class="col d-flex justify-content-center" style="margin-bottom: 10px">
+						    <div class="col d-flex justify-content-center">
+						     <a href="###" class="d-color"><i class="fas fa-step-backward"></i></a>
+						    </div>
+						    <div class="col d-flex justify-content-center">
+						      <a href="##"  class="d-color"><i class="fas fa-play"></i></a>
+						    </div>
+						    <div class="col d-flex justify-content-center">
+						     <a href="##"  class="d-color"><i class="fas fa-step-forward"></i></a>
+						    </div>
+				    	</div>
+				    	<div class="w-100"></div>
+				    	<div class="col">
+				    		<div class="progress" style="height: 5px">
+							  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+				    	</div>
+				    </div>
+				</div>
+
+<!-- DERCH --> 				
+				<div class="col d-flex justify-content-end">
+					<div class="col d-flex justify-content-end">
+						<a class="fas fa-volume-down d-color" style="margin-top: -4px" href="###"><i ></i></a>
+					</div>
+    				<div class="col">
+						<div class="progress" style="height: 5px; width: 100px">
+						  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+    				</div>
+				</div>
+    		
+    	</div>
+    </nav>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>feather.replace()</script>
+
+</body>
+</html>
